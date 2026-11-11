@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for Invertis Coding Club">
+    <title>Registration | Invertis Coding Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header>
+    <h1>Invertis Coding Club</h1>
+    <p>Learn. Code. Create. Innovate.</p>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="form-box">
+        <h2>Student Registration</h2>
+        <p>Fill in the details to join our coding club.</p>
+
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   minlength="6" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                   min="16" max="30" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="website">Portfolio URL:</label>
+            <input type="url" id="website" name="website"
+                   placeholder="https://example.com">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter phone number"
+                   pattern="[0-9]{10}" required>
+
+            <label for="time">Preferred Meeting Time:</label>
+            <input type="time" id="time" name="time">
+
+            <fieldset>
+                <legend>Choose Your Course</legend>
+
+                <label>
+                    <input type="radio" name="course" value="html" required>
+                    HTML and CSS
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="java">
+                    Java Programming
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="javascript">
+                    JavaScript
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Interests</legend>
+
+                <label>
+                    <input type="checkbox" name="interest" value="coding">
+                    Coding
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interest" value="web">
+                    Web Development
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interest" value="design">
+                    Web Design
+                </label>
+            </fieldset>
+
+            <label for="year">Select Your Year:</label>
+            <select id="year" name="year" required>
+                <option value="">Choose Year</option>
+                <option value="first">First Year</option>
+                <option value="second">Second Year</option>
+                <option value="third">Third Year</option>
+                <option value="fourth">Fourth Year</option>
+            </select>
+
+            <label for="message">Why do you want to join?</label>
+            <textarea id="message" name="message"
+                      rows="4"
+                      placeholder="Write something about yourself"></textarea>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"
+                   accept=".pdf,.doc,.docx">
+
+            <button type="submit">Register Now</button>
+
+        </form>
+    </section>
+
+    <section class="form-box">
+        <h2>Volunteer Application</h2>
+
+        <form action="#" method="post">
+
+            <label for="volunteer-name">Full Name:</label>
+            <input type="text" id="volunteer-name"
+                   name="volunteer-name" required>
+
+            <label for="volunteer-email">Email:</label>
+            <input type="email" id="volunteer-email"
+                   name="volunteer-email" required>
+
+            <label for="role">Preferred Volunteer Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select Role</option>
+                <option value="event">Event Management</option>
+                <option value="technical">Technical Support</option>
+                <option value="design">Design Team</option>
+            </select>
+
+            <label for="reason">Why do you want to volunteer?</label>
+            <textarea id="reason" name="reason" rows="4"
+                      required></textarea>
+
+            <button type="submit">Apply as Volunteer</button>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Invertis Coding Club.</p>
+</footer>
+
+</body>
+</html>
